@@ -1,0 +1,26 @@
+@import "../Colors.module.css";
+
+.home {
+    background-color: var(--red);
+}
+
+.coverImg{
+    max-height: 100%;
+    max-width: 100%;
+    display: block;
+}
+
+.about {
+    background-color: var(--raisin);
+    color: var(--platinum);
+}
+
+.projects {
+    background-color: var(--platinum);
+    color: var(--raisin);
+}
+
+.contact {
+    background-color: var(--raisin);
+    color: var(--platinum);
+}

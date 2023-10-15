@@ -1,0 +1,55 @@
+@import "../../Fonts.module.css";
+@import "../../Colors.module.css";
+
+.navbar {
+    background-color: #0c0910;
+    position: fixed;
+    width: 100%;
+}
+
+.navbarContainer {
+    display: block;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.navbarColumn {
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.link {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    color: var(--platinum);
+    text-decoration: none;
+    float: right;
+    transition: all 0.3s ease-in-out;
+    background: var(--night) linear-gradient(0deg, #0000 0%, var(--night) 50%);
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--red);
+    }
+}
+
+.linkText {
+    padding: 1.5em 0.5em 1.5em 0.5em;
+    transition: all 0.1s ease-in-out;
+    user-select: none;
+
+    &:hover {
+        padding: 1.7em 0.5em 1.3em 0.5em;
+    }
+}
+
+.logo {
+    font-family: 'Lato', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--platinum);
+    height: 100%;
+    margin: 0;
+}
