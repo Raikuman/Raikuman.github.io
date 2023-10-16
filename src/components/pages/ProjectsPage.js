@@ -1,9 +1,9 @@
-import {TabTitle} from "../utils/TabTitle";
-import RowContainer from "./layouts/RowContainer";
-import styles from "./home/HomeLayout.module.css";
-import ColumnSingle from "./layouts/ColumnContainerSingle";
+import {TabTitle} from "../../utils/TabTitle";
+import RowContainer from "../layouts/RowContainer";
+import styles from "../home/HomeLayout.module.css";
+import ColumnSingle from "../layouts/ColumnContainerSingle";
 
-export const Projects = () => {
+export const ProjectsPage = () => {
     TabTitle("Jim Inong - Projects");
 
     return (
