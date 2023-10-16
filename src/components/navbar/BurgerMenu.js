@@ -16,7 +16,7 @@ class BurgerMenu extends Component {
     updateDimensions = () => {
         this.setState({ width: window.innerWidth }, () => {
             if (this.state.toggled && this.state.width > 766) {
-                var burgerMenu = document.getElementById("burgerMenu");
+                const burgerMenu = document.getElementById("burgerMenu");
                 if (burgerMenu === undefined) return;
 
                 burgerMenu.style.display = "none";
@@ -28,7 +28,7 @@ class BurgerMenu extends Component {
     toggleBurger() {
         this.setState({toggled: !this.state.toggled})
 
-        var burgerMenu = document.getElementById("burgerMenu");
+        const burgerMenu = document.getElementById("burgerMenu");
         if (burgerMenu === undefined) return;
 
         if (!this.state.toggled) {

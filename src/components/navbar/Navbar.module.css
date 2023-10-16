@@ -9,8 +9,8 @@
 
 .navbarContainer {
     display: block;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 .navbarColumn {
@@ -122,7 +122,7 @@
     100% { opacity: 0; }
 }
 
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 875px) {
     .navbar .burgerContainer:not(:first-child) {display: none}
     .navbar .menuLinks {display: none;}
     .navbar .burgerMenu {display: none;}
@@ -132,7 +132,7 @@
     }
 }
 
-@media screen and (min-width: 766px) {
+@media screen and (min-width: 876px) {
     .navbar .burgerContainer {display: none}
 }
 
@@ -230,7 +230,7 @@
 }
 
 .burgerMenu {
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     width: 100%;
 }

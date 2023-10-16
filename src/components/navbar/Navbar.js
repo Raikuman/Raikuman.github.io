@@ -18,6 +18,7 @@ export const Navbar = () => {
                         <div className={styles.menuLinks}>
                             <NavlinkButton content={<FontAwesomeIcon icon='fa-brands fa-github'/>} redirect="https://github.com/Raikuman"/>
                             <NavlinkButton content="CONTACT" link="#contact"/>
+                            <NavlinkButton content="RESUME" link="#resume"/>
                             <NavlinkButton content="PROJECTS" link="#projects"/>
                             <NavlinkButton content="ABOUT" link="#about"/>
                         </div>
@@ -25,9 +26,10 @@ export const Navbar = () => {
                     </div>
                 </div>
                 <div id="burgerMenu" className={styles.burgerMenu}>
-                    <NavlinkButton content="CONTACT" link="#contact" className={styles.burgerItem}/>
-                    <NavlinkButton content="PROJECTS" link="#projects" className={styles.burgerItem}/>
                     <NavlinkButton content="ABOUT" link="#about" className={styles.burgerItem}/>
+                    <NavlinkButton content="PROJECTS" link="#projects" className={styles.burgerItem}/>
+                    <NavlinkButton content="RESUME" link="#resume" className={styles.burgerItem}/>
+                    <NavlinkButton content="CONTACT" link="#contact" className={styles.burgerItem}/>
                 </div>
             </div>
         </div>
