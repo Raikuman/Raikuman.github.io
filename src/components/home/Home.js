@@ -1,14 +1,29 @@
 import styles from './HomeLayout.module.css'
 import {SplashCover} from "./SplashCover";
-import RowContainer from "./layouts/RowContainer";
-import ColumnContainerThird from "./layouts/ColumnContainerThird";
-import ColumnContainerHalf from "./layouts/ColumnContainerHalf";
-import ColumnSingle from "./layouts/ColumnSingle";
+import RowContainer from "../layouts/RowContainer";
+import ColumnContainerThird from "../layouts/ColumnContainerThird";
+import ColumnContainerHalf from "../layouts/ColumnContainerHalf";
+import ColumnSingle from "../layouts/ColumnContainerSingle";
+import {useEffect} from "react";
+import {useLocation} from "react-router-dom";
+import {TabTitle} from "../../utils/TabTitle";
 
 export const Home = () => {
+    TabTitle("Jim Inong");
+
+    const { state } = useLocation();
+    const { targetId } = state || {};
+
+    useEffect(() => {
+        const el = document.getElementById(targetId);
+        if (el) {
+            el.scrollIntoView({behavior: "smooth"});
+        }
+    }, [targetId]);
+
     return (
         <div>
-            <SplashCover/>
+            <SplashCover id="#home"/>
 
             <RowContainer id="#about" className={styles.about}>
                 <ColumnContainerThird>
