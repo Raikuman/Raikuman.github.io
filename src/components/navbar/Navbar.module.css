@@ -101,7 +101,7 @@
 }
 
 .logoControl {
-    width: auto;
+    width: auto !important;
 }
 
 .caret {
