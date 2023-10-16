@@ -1,9 +1,9 @@
 import styles from "./HomeLayout.module.css";
-import splash from '../images/splash.jpg'
+import splash from '../../images/splash.jpg'
 
-export const SplashCover = () => {
+export const SplashCover = ({id}) => {
     return (
-        <div className={styles.coverImg}>
+        <div id={id} className={styles.coverImg}>
             <img src={splash} alt={"Logo"} className={styles.coverImg}/>
         </div>
     )

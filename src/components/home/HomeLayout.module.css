@@ -1,4 +1,4 @@
-@import "../Colors.module.css";
+@import "../../Colors.module.css";
 
 .home {
     background-color: var(--red);
@@ -39,12 +39,26 @@
     }
 }
 
-.contact {
+.resume {
     background-color: var(--raisin);
     color: var(--platinum);
 
     & h1 {
         color: var(--blue);
+        font-family: 'Mulish', sans-serif;
+    }
+
+    & p {
+        font-family: 'Space Mono', monospace;
+    }
+}
+
+.contact {
+    background-color: var(--platinum);
+    color: var(--raisin);
+
+    & h1 {
+        color: var(--red);
         font-family: 'Mulish', sans-serif;
     }
 

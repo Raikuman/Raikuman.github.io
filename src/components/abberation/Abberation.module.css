@@ -1,0 +1,60 @@
+.abberationContainer {
+    display: inline-grid;
+    position: relative;
+}
+
+.abberationControl {
+    display: table;
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+    &:hover .abberation1 {
+        animation: abberate1 0.3s linear none;
+    }
+
+    &:hover .abberation2 {
+        animation: abberate2 0.3s linear none;
+    }
+}
+
+.abberationCenter {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.abberationElement {
+    display: flex;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    height: 100%;
+
+    & h1 {
+        vertical-align: middle;
+        display: table-cell;
+    }
+}
+
+.abberation1 {
+    transition: all 0.07s ease-in;
+    position: relative;
+    z-index: -1;
+}
+
+.abberation2 {
+    transition: all 0.07s ease-in;
+    position: relative;
+    z-index: -1;
+}
+
+@keyframes abberate1 {
+    0% {left: 0; top: 0}
+    10% {left: 2px; top: 2px}
+    70% {left: 0; top: 0}
+}
+
+@keyframes abberate2 {
+    0% {left: 0; top: 0}
+    10% {left: -2px; top: -2px}
+    70% {left: 0; top: 0}
+}
