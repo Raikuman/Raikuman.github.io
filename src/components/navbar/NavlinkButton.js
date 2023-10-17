@@ -2,12 +2,12 @@ import styles from './Navbar.module.css'
 import Abberation from "../abberation/Abberation";
 import {useLocation, useNavigate} from "react-router-dom";
 
-export const NavlinkButton = ({content, link, redirect, className}) => {
+export const NavlinkButton = ({content, link, redirect, className, parentStateUpdate}) => {
 
     const location = useLocation();
     const navigate = useNavigate();
 
-    const routeChange = () =>{
+    const routeChange = () => {
         navigate('/', {state: {targetId: link}});
         document.getElementById(link).scrollIntoView({behavior: "smooth"});
     }
@@ -23,10 +23,18 @@ export const NavlinkButton = ({content, link, redirect, className}) => {
         } else {
             routeChange();
         }
-     }
+    }
+
+    function CloseNavbar() {
+        parentStateUpdate();
+        const burgerWrapper = document.getElementById("burgerWrapper");
+        if (burgerWrapper === undefined) return;
+
+        burgerWrapper.style.gridTemplateRows = "0fr";
+    }
 
     return (
-        <div className={`${styles.linkContainer} ${className}`}>
+        <div onClick={CloseNavbar} className={`${styles.linkContainer} ${className === undefined ? "" : " " + className}`}>
             <button onClick={JumpToRelevantDiv} className={`${styles.anchorContainer}`}>
                 <Abberation color0="#E9EDE9" color1="#5CC8FF" color2="#F72642" className={styles.link}>
                     <h1 style={{margin: 0}}>{content}</h1>

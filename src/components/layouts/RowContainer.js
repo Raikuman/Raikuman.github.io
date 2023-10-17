@@ -6,7 +6,7 @@ class RowContainer extends Component {
         const {className, id} = this.props;
 
         return (
-            <div id={id} className={`${styles.rowContainer} ${className}`}>
+            <div id={id} className={`${styles.rowContainer} ${className === undefined ? "" : " " + className}`}>
                 {this.props.children}
             </div>
         );

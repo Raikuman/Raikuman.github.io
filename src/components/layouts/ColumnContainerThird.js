@@ -5,7 +5,7 @@ class ColumnContainerThird extends Component {
     render() {
         const {className, id} = this.props;
         return (
-            <div id={id} className={`${styles.columnThirds} ${className}`}>
+            <div id={id} className={`${styles.columnThirds} ${className === undefined ? "" : " " + className}`}>
                 {this.props.children}
             </div>
         );

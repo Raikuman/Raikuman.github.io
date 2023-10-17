@@ -10,14 +10,14 @@ class Abberation extends Component {
         let secondElement = React.cloneElement(this.props.children);
 
         return (
-            <div className={`${styles.abberationControl} ${logoControl}`}>
+            <div className={`${styles.abberationControl} ${logoControl === undefined ? "" : " " + logoControl}`}>
                 <div className={styles.abberationCenter}>
                     <div className={styles.abberationContainer}>
-                        <div className={`${styles.abberationElement}  ${className}`}
+                        <div className={`${styles.abberationElement}  ${className === undefined ? "" : " " + className}`}
                              style={{color: color0}}>{originalElement}</div>
-                        <div className={`${styles.abberationElement} ${styles.abberation1} ${className}`}
+                        <div className={`${styles.abberationElement} ${styles.abberation1} ${className === undefined ? "" : " " + className}`}
                              style={{color: color1}}>{firstElement}</div>
-                        <div className={`${styles.abberationElement} ${styles.abberation2} ${className}`}
+                        <div className={`${styles.abberationElement} ${styles.abberation2} ${className === undefined ? "" : " " + className}`}
                              style={{color: color2}}>{secondElement}</div>
                     </div>
                 </div>

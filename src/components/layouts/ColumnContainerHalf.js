@@ -6,7 +6,7 @@ class ColumnContainerHalf extends Component {
         const {className, id} = this.props;
 
         return (
-            <div id={id} className={`${styles.columnHalves} ${className}`}>
+            <div id={id} className={`${styles.columnHalves} ${className === undefined ? "" : " " + className}`}>
                 {this.props.children}
             </div>
         );

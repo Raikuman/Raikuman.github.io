@@ -8,39 +8,39 @@ class BurgerMenu extends Component {
         super();
 
         this.state = {
-            toggled: false,
             width: 0
         }
     }
 
     updateDimensions = () => {
         this.setState({ width: window.innerWidth }, () => {
-            if (this.state.toggled && this.state.width > 766) {
-                const burgerMenu = document.getElementById("burgerMenu");
-                if (burgerMenu === undefined) return;
+            if (this.props.parentState && this.state.width > 876) {
+                const burgerWrapper = document.getElementById("burgerWrapper");
+                if (burgerWrapper === undefined) return;
 
-                burgerMenu.style.display = "none";
-                this.setState({toggled: false});
+                burgerWrapper.style.gridTemplateRows = "0fr";
+                this.props.parentStateUpdate()
             }
         });
     };
 
     toggleBurger() {
-        this.setState({toggled: !this.state.toggled})
+        this.props.parentStateUpdate()
+        this.setState({toggled: this.props.parentState})
 
-        const burgerMenu = document.getElementById("burgerMenu");
-        if (burgerMenu === undefined) return;
+        const burgerWrapper = document.getElementById("burgerWrapper");
+        if (burgerWrapper === undefined) return;
 
-        if (!this.state.toggled) {
-            burgerMenu.style.display = "flex";
+        if (!this.props.parentState) {
+            burgerWrapper.style.gridTemplateRows = "1fr";
         } else {
-            burgerMenu.style.display = "none";
+            burgerWrapper.style.gridTemplateRows = "0fr";
         }
     }
 
     render() {
-        var burgerClass = `${styles.burgerIcons} ${styles.burgerContainer}`;
-        burgerClass += this.state.toggled ? ` ${styles.open}` : "";
+        let burgerClass = `${styles.burgerIcons} ${styles.burgerContainer}`;
+        burgerClass += this.props.parentState ? ` ${styles.open}` : "";
 
         return (
 
