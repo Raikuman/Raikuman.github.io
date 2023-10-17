@@ -1,6 +1,6 @@
 import {TabTitle} from "../../utils/TabTitle";
 import RowContainer from "../layouts/RowContainer";
-import styles from "../home/HomeLayout.module.css";
+import pageStyles from "../../css/PageDesign.module.css"
 import ColumnSingle from "../layouts/ColumnContainerSingle";
 
 export const ProjectsPage = () => {
@@ -8,8 +8,8 @@ export const ProjectsPage = () => {
 
     return (
         <>
-            <RowContainer className={styles.about}>
-                <ColumnSingle>
+            <RowContainer className={pageStyles.defaultStyles}>
+                <ColumnSingle className={pageStyles.roundedColumn}>
                     <h1 id="#projects">Title</h1>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut

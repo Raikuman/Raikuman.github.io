@@ -1,5 +1,3 @@
-@import "../../Colors.module.css";
-
 .home {
     background-color: var(--red);
 }
@@ -8,61 +6,4 @@
     max-height: 100%;
     max-width: 100%;
     display: block;
-}
-
-.about {
-    background-color: var(--raisin);
-    color: var(--platinum);
-
-    & h1 {
-        color: var(--blue);
-        font-family: 'Mulish', sans-serif;
-        font-weight: bolder;
-    }
-
-    & p {
-        font-family: 'Space Mono', monospace;
-    }
-}
-
-.projects {
-    background-color: var(--platinum);
-    color: var(--raisin);
-
-    & h1 {
-        color: var(--red);
-        font-family: 'Mulish', sans-serif;
-    }
-
-    & p {
-        font-family: 'Space Mono', monospace;
-    }
-}
-
-.resume {
-    background-color: var(--raisin);
-    color: var(--platinum);
-
-    & h1 {
-        color: var(--blue);
-        font-family: 'Mulish', sans-serif;
-    }
-
-    & p {
-        font-family: 'Space Mono', monospace;
-    }
-}
-
-.contact {
-    background-color: var(--platinum);
-    color: var(--raisin);
-
-    & h1 {
-        color: var(--red);
-        font-family: 'Mulish', sans-serif;
-    }
-
-    & p {
-        font-family: 'Space Mono', monospace;
-    }
 }

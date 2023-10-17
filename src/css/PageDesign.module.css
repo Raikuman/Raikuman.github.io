@@ -1,0 +1,23 @@
+.defaultStyles {
+    & h1 {
+        color: var(--red);
+        font-family: 'Ropa Sans', sans-serif;
+        font-size: 3em;
+        margin: 0.1em 0 0.1em 0;
+    }
+
+    & p {
+        color: var(--platinum);
+        font-family: 'Space Mono', monospace;
+        font-size: 1.05em;
+    }
+}
+
+.roundedColumn {
+    background-color: #211c2b;
+    border-radius: 0.5em;
+}
+
+.highlight {
+    color: var(--blue);
+}
