@@ -1,6 +1,4 @@
-@import "../../Fonts.module.css";
-@import "../../Colors.module.css";
-
+@import "../../css/Fonts.module.css";
 .navbar {
     background-color: #0c0910;
     position: fixed;

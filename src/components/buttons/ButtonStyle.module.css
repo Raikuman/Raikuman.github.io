@@ -1,0 +1,45 @@
+.buttonWrapper {
+    width: 100%;
+}
+
+.defaultButtonStyle {
+    border-radius: 0.5em;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    transition: all 0.1s ease-in;
+    margin: 0.5em auto;
+    display:block;
+
+    & h1 {
+        margin: 0.1em 0.5em 0.1em 0.5em;
+        font-family: 'Space Mono', monospace;
+        font-size: 2em;
+    }
+
+    &:hover {
+        top: -2px;
+    }
+}
+
+.whiteButton {
+    background-color: var(--platinum);
+    & h1 {
+        color: var(--night);
+    }
+}
+
+.redButton {
+    background-color: var(--red);
+    & h1 {
+        color: var(--night);
+    }
+}
+
+.blueButton {
+    background-color: var(--blue);
+    & h1 {
+        color: var(--night);
+    }
+}

@@ -4,8 +4,8 @@
 }
 
 .rowContainer {
-    padding: 15vh 5% 15vh 5%;
-    width: 90%;
+    padding: 15vh 17% 15vh 17%;
+    width: 66%;
     min-height: 70vh;
     display: flex;
     justify-content: center;
@@ -14,25 +14,28 @@
 }
 
 .columnThirds {
-    margin: 0 2% 0 2%;
+    margin: 2%;
+    padding: 2%;
     min-width: 20em;
-    width: 29.3%;
+    width: 25.33%;
     height: 100%;
     display: inline-block;
 }
 
 .columnHalves {
-    margin: 0 6% 0 6%;
+    margin: 2%;
+    padding: 2%;
     min-width: 20em;
-    width: 38%;
+    width: 42%;
     height: 100%;
     display: inline-block;
 }
 
 .columnSingle {
-    margin: 0 10% 0 10%;
+    margin: 2%;
+    padding: 2%;
     min-width: 20em;
-    width: 70%;
+    width: 92%;
     height: 100%;
     display: inline-block;
 }

@@ -26,7 +26,8 @@ export const NavlinkButton = ({content, link, redirect, className, parentStateUp
     }
 
     function CloseNavbar() {
-        parentStateUpdate();
+        if (parentStateUpdate !== undefined) parentStateUpdate();
+
         const burgerWrapper = document.getElementById("burgerWrapper");
         if (burgerWrapper === undefined) return;
 

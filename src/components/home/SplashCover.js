@@ -1,5 +1,5 @@
 import styles from "./HomeLayout.module.css";
-import splash from '../../images/splash.jpg'
+import splash from '../../resources/splash.jpg'
 
 export const SplashCover = ({id}) => {
     return (
