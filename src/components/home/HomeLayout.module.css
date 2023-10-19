@@ -1,9 +1,6 @@
-.home {
-    background-color: var(--red);
-}
-
-.coverImg{
-    max-height: 100%;
-    max-width: 100%;
-    display: block;
+.coverImg {
+    max-height: calc(100vh - 3.333125em);
+    width: 100%;
+    display: flex;
+    object-fit: cover;
 }

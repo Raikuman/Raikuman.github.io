@@ -52,6 +52,7 @@ class Navbar extends Component {
                         </div>
                     </div>
                 </div>
+                <div className={styles.navbarFill}></div>
             </div>
         )
     }
