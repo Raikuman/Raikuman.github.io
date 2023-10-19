@@ -3,23 +3,25 @@
 }
 
 .defaultButtonStyle {
-    border-radius: 0.5em;
-    border: none;
+    border: 2px solid var(--night);
     cursor: pointer;
     position: relative;
-    top: 0;
     transition: all 0.1s ease-in;
     margin: 0.5em auto;
-    display:block;
+    display: block;
 
     & h1 {
         margin: 0.1em 0.5em 0.1em 0.5em;
-        font-family: 'Space Mono', monospace;
-        font-size: 2em;
+        font-family: 'Space Mono', monospace !important;
+        font-size: 1.5em !important;
+        font-weight: normal;
+        position: relative;
+        top: 0;
+        transition: all 0.1s ease-in-out;
     }
 
-    &:hover {
-        top: -2px;
+    &:hover h1 {
+        top: 2px;
     }
 }
 
@@ -28,6 +30,10 @@
     & h1 {
         color: var(--night);
     }
+
+    &::after {
+        background: var(--platinum);
+    }
 }
 
 .redButton {
@@ -35,11 +41,19 @@
     & h1 {
         color: var(--night);
     }
+
+    &::after {
+        background: var(--red);
+    }
 }
 
 .blueButton {
     background-color: var(--blue);
     & h1 {
         color: var(--night);
+    }
+
+    &::after {
+        background: var(--blue);
     }
 }

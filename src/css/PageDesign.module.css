@@ -1,12 +1,21 @@
 .defaultStyles {
     & h1 {
-        color: var(--red);
         font-family: 'Ropa Sans', sans-serif;
         font-size: 3em;
         margin: 0.1em 0 0.1em 0;
     }
 
     & p {
+        font-family: 'Space Mono', monospace;
+        font-size: 1.05em;
+    }
+
+    & ul {
+        padding-left: 1em;
+    }
+
+    & li {
+        margin: 0.5em 0 0.5em 0;
         color: var(--platinum);
         font-family: 'Space Mono', monospace;
         font-size: 1.05em;
@@ -18,6 +27,39 @@
     border-radius: 0.5em;
 }
 
-.highlight {
+.highlightBlue {
     color: var(--blue);
+}
+
+.highlightRed {
+    color: var(--red);
+}
+
+.whiteColumn {
+    background-color: var(--platinum);
+    & p {
+        color: var(--night);
+    }
+}
+
+.redColumn {
+    background-color: var(--red);
+    & p {
+        color: var(--night);
+    }
+}
+
+.blueColumn {
+    background-color: var(--blue);
+    & p {
+        color: var(--night);
+    }
+}
+
+.rowHeader {
+    color: var(--platinum) !important;
+    font-size: 3.5em !important;
+    width: 100%;
+    text-align: center;
+    position: relative;
 }

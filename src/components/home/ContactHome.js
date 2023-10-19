@@ -1,23 +1,30 @@
-import RowContainer from "../layouts/RowContainer";
-import pageStyles from "../../css/PageDesign.module.css"
-import ColumnSingle from "../layouts/ColumnContainerSingle";
+import Row from "../layouts/Row";
+import ColumnSingle from "../layouts/ColumnSingle";
+import containerLayouts from "../layouts/ContainerLayout.module.css";
+import ColumnHalf from "../layouts/ColumnHalf";
+import {Button} from "../buttons/Button";
+import pageStyles from "../../css/PageDesign.module.css";
 
 export const ContactHome = () => {
     return (
-        <RowContainer id="#contact" className={pageStyles.defaultStyles}>
-            <ColumnSingle className={pageStyles.roundedColumn}>
-                <h1>Title</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-                    id est laborum.
-                </p>
+        <Row id="#contact">
+            <ColumnSingle className={`${containerLayouts.bgWhite} ${pageStyles.defaultStyles}`}>
+                <ColumnHalf className={containerLayouts.bgRed}>
+                    <h1 style={{textAlign: "center"}}>CONTACT</h1>
+                </ColumnHalf>
+                <ColumnHalf className={containerLayouts.bgRed}>
+                    <h1 style={{textAlign: "center"}}>FORM</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
+                    </p>
+                    <Button color="red" local="/projects" text={"SEND FORM"}/>
+                </ColumnHalf>
             </ColumnSingle>
-        </RowContainer>
+        </Row>
     )
 }

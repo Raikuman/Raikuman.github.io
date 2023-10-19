@@ -9,7 +9,6 @@ export const NavlinkButton = ({content, link, redirect, className, parentStateUp
 
     const routeChange = () => {
         navigate('/', {state: {targetId: link}});
-        document.getElementById(link).scrollIntoView({behavior: "smooth"});
     }
 
     function JumpToRelevantDiv() {

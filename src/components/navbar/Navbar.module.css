@@ -3,6 +3,12 @@
     background-color: #0c0910;
     position: fixed;
     width: 100%;
+    z-index: 100;
+    top: 0;
+}
+
+.navbarFill {
+    height: 3.333125em;
 }
 
 .navbarContainer {

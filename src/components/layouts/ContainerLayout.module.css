@@ -1,0 +1,58 @@
+.row {
+    margin: 5vh 15% 5vh 15%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-width: 20em;
+}
+
+@media screen and (max-width: 73.9375em) {
+    .columnHalf {
+        width: 92% !important;
+        min-width: 18em !important;
+    }
+}
+
+.columnSingle {
+    display: inline-block;
+    width: 92%;
+    margin: 2%;
+    padding: 2%;
+    min-width: 20em;
+    text-align: left;
+}
+
+.columnHalf {
+    display: inline-block;
+    width: 42%;
+    margin: 2%;
+    padding: 2%;
+    min-width: 20em;
+    justify-content: center;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.columnThird {
+    display: inline-block;
+    width: 25.33%;
+    margin: 2%;
+    padding: 2%;
+    min-width: 20em;
+    justify-content: center;
+    text-align: left;
+}
+
+.bgWhite {
+    background: var(--platinum);
+}
+
+.bgRed {
+    background: var(--red);
+}
+
+.bgBlue {
+    background: var(--blue);
+}
