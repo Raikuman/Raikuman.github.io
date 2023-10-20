@@ -27,8 +27,7 @@ class Navbar extends Component {
                     <div className={styles.navbarContainer}>
                         <div className={styles.navbarColumn}>
                             <Abberation color0="#E9EDE9" color1="#5CC8FF" color2="#F72642"
-                                        logoControl={styles.logoControl}><Logo
-                                link="#home"/></Abberation>
+                                        logoControl={styles.logoControl}><Logo/></Abberation>
                         </div>
                         <div className={styles.navbarColumn}>
                             <BurgerMenu parentStateUpdate={this.toggleState} parentState={this.state.toggled}/>
@@ -45,10 +44,14 @@ class Navbar extends Component {
                     </div>
                     <div id="burgerWrapper" className={styles.burgerWrapper}>
                         <div className={styles.burgerMenu}>
-                            <NavlinkButton content="ABOUT" link="#about" className={styles.burgerItem} parentStateUpdate={this.toggleState}/>
-                            <NavlinkButton content="PROJECTS" link="#projects" className={styles.burgerItem} parentStateUpdate={this.toggleState}/>
-                            <NavlinkButton content="RESUME" link="#resume" className={styles.burgerItem} parentStateUpdate={this.toggleState}/>
-                            <NavlinkButton content="CONTACT" link="#contact" className={styles.burgerItem} parentStateUpdate={this.toggleState}/>
+                            <NavlinkButton content="ABOUT" link="#about" className={styles.burgerItem}
+                                           parentStateUpdate={this.toggleState}/>
+                            <NavlinkButton content="PROJECTS" link="#projects" className={styles.burgerItem}
+                                           parentStateUpdate={this.toggleState}/>
+                            <NavlinkButton content="RESUME" link="#resume" className={styles.burgerItem}
+                                           parentStateUpdate={this.toggleState}/>
+                            <NavlinkButton content="CONTACT" link="#contact" className={styles.burgerItem}
+                                           parentStateUpdate={this.toggleState}/>
                         </div>
                     </div>
                 </div>

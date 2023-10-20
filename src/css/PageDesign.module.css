@@ -23,7 +23,8 @@
 }
 
 .roundedColumn {
-    background-color: #211c2b;
+    background-color: var(--lightRaisin);
+    color: var(--platinum);
     border-radius: 0.5em;
 }
 
@@ -62,4 +63,8 @@
     width: 100%;
     text-align: center;
     position: relative;
+}
+
+.headerRed {
+    color: var(--red);
 }

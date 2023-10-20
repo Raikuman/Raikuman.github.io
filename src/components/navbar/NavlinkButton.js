@@ -18,7 +18,12 @@ export const NavlinkButton = ({content, link, redirect, className, parentStateUp
         }
 
         if (location.pathname === '/' || location.pathname === '/' + link.substring(1, link.length)) {
-            document.getElementById(link).scrollIntoView({behavior: "smooth"});
+            const element = document.getElementById(link);
+            let y = element.getBoundingClientRect().top + window.scrollY;
+
+            if (link !== '#home') y -= 50;
+
+            window.scrollTo({top: y, behavior: 'smooth'});
         } else {
             routeChange();
         }

@@ -27,24 +27,5 @@ export const ProjectsHome = () => {
                 </ColumnHalf>
             </ColumnSingle>
         </Row>
-        // <Row id="#projects" className={pageStyles.defaultStyles}>
-        //     <motion.div transition={{ease: "easeInOut", duration: 0.5}} initial={{width: "100%", position: "relative", top: "0.5em", opacity: 0}} whileInView={{top: 0, opacity: 1}}>
-        //         <h1 className={pageStyles.rowHeader}>Row Header</h1>
-        //     <ColumnSingle className={`${pageStyles.roundedColumn} ${pageStyles.whiteColumn}`}>
-        //         <ColumnHalf disableSpacing={false}>
-        //             <h1 style={{textAlign: "center"}}>Image</h1>
-        //         </ColumnHalf>
-        //         <ColumnHalf disableSpacing={false}>
-        //             <h1 style={{textAlign: "center"}}>Projects</h1>
-        //             <p style={{textAlign: "center"}}>
-        //                 View all of my projects below.
-        //             </p>
-        //             <Button color="red" local="/projects" text={"View projects"}/>
-        //             <Button color="white" local="/projects" text={"View projects"}/>
-        //             <Button color="blue" local="/projects" text={"View projects"}/>
-        //         </ColumnHalf>
-        //     </ColumnSingle>
-        //     </motion.div>
-        // </Row>
     )
 }

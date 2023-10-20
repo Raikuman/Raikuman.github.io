@@ -4,25 +4,18 @@ import containerLayouts from "../layouts/ContainerLayout.module.css";
 import ColumnHalf from "../layouts/ColumnHalf";
 import {Button} from "../buttons/Button";
 import pageStyles from "../../css/PageDesign.module.css";
+import ContactForm from "../form/ContactForm";
 
 export const ContactHome = () => {
     return (
         <Row id="#contact">
-            <ColumnSingle className={`${containerLayouts.bgWhite} ${pageStyles.defaultStyles}`}>
-                <ColumnHalf className={containerLayouts.bgRed}>
-                    <h1 style={{textAlign: "center"}}>CONTACT</h1>
+            <ColumnSingle className={`${pageStyles.defaultStyles} ${pageStyles.roundedColumn}`}>
+                <ColumnHalf>
+                    <h1 style={{textAlign: "center"}} className={pageStyles.headerRed}>CONTACT</h1>
+                    <p style={{textAlign: "center"}}>Got something to ask? Leave a message!</p>
                 </ColumnHalf>
-                <ColumnHalf className={containerLayouts.bgRed}>
-                    <h1 style={{textAlign: "center"}}>FORM</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.
-                    </p>
-                    <Button color="red" local="/projects" text={"SEND FORM"}/>
+                <ColumnHalf>
+                    <ContactForm/>
                 </ColumnHalf>
             </ColumnSingle>
         </Row>
