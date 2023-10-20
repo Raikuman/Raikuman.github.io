@@ -1,5 +1,5 @@
 import styles from "./Forms.module.css"
-import buttonStyles from "../buttons/ButtonStyle.module.css"
+import buttonStyles from "../../../buttons/ButtonStyle.module.css"
 import React, {Component} from 'react';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import emailjs from '@emailjs/browser'
@@ -132,7 +132,7 @@ class ContactForm extends Component {
                     <label style={this.state.validMessage ? {display: "none"} : {display: "inline"}}>Message cannot be empty</label>
                 </div>
                 <div className={buttonStyles.buttonWrapper}>
-                    <button className={`${buttonStyles.defaultButtonStyle} ${buttonStyles.blueButton}`} onClick={this.SubmitEmail.bind(this)}>
+                    <button className={`${buttonStyles.defaultButtonStyle} ${buttonStyles.redButton}`} onClick={this.SubmitEmail.bind(this)}>
                         <h1>Send message <FontAwesomeIcon icon="fa-solid fa-envelope" /></h1>
                     </button>
                 </div>

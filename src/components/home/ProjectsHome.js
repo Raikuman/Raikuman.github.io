@@ -1,29 +1,23 @@
 import pageStyles from "../../css/PageDesign.module.css"
 import Row from "../layouts/Row";
 import {Button} from "../buttons/Button";
-import { motion } from "framer-motion"
 import ColumnSingle from "../layouts/ColumnSingle";
 import ColumnHalf from "../layouts/ColumnHalf";
-import containerLayouts from "../layouts/ContainerLayout.module.css";
+import {ProjectSlider} from "./components/projectSlide/ProjectSlider";
 
 export const ProjectsHome = () => {
     return (
         <Row id="#projects">
-            <ColumnSingle className={`${containerLayouts.bgWhite} ${pageStyles.defaultStyles}`}>
-                <ColumnHalf className={containerLayouts.bgRed}>
-                    <h1 style={{textAlign: "center"}}>PROJECTS</h1>
+            <ColumnSingle className={`${pageStyles.defaultStyles} ${pageStyles.roundedColumn}`}>
+                <h1 style={{textAlign: "center"}} className={pageStyles.headerRed}>PROJECTS</h1>
+                <ColumnHalf>
+                    <ProjectSlider/>
+                </ColumnHalf>
+                <ColumnHalf>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.
+                        A collection of projects I've developed: Web design/development, games, bots.
                     </p>
                     <Button color="red" local="/projects" text={"View projects"}/>
-                </ColumnHalf>
-                <ColumnHalf className={containerLayouts.bgRed}>
-                    <h1 style={{textAlign: "center"}}>IMAGE</h1>
                 </ColumnHalf>
             </ColumnSingle>
         </Row>

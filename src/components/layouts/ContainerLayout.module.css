@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    min-width: 20em;
+    min-width: 16em;
 }
 
 @media screen and (max-width: 73.9375em) {
