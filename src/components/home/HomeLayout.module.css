@@ -66,13 +66,8 @@
         }
     }
 
-    .splashSectionLeft {
-        width: 80%;
-        text-align: center;
-    }
-
-    .splashSectionRight {
-        width: 60%;
+    .splashSectionLeft, .splashSectionRight {
+        width: 100%;
         text-align: center;
     }
 }
