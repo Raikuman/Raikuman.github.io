@@ -3,7 +3,8 @@
 }
 
 .defaultButtonStyle {
-    border: 2px solid var(--night);
+    border: 0.2em solid var(--night);
+    border-radius: 0.2em;
     cursor: pointer;
     position: relative;
     transition: all 0.1s ease-in;

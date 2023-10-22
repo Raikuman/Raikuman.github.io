@@ -8,9 +8,9 @@ export const ProjectsPage = () => {
     TabTitle("Jim Inong - Projects");
 
     return (
-        <Row>
+        <Row id="#projects">
             <ColumnSingle className={`${containerLayouts.bgWhite} ${pageStyles.defaultStyles}`}>
-                <h1 id="#projects">Title</h1>
+                <h1>Title</h1>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                     labore et dolore

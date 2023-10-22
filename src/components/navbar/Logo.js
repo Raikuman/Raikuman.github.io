@@ -2,7 +2,7 @@ import styles from "./Navbar.module.css";
 import {TypingEffect} from "../../utils/TypingEffect";
 import {useLocation, useNavigate} from "react-router-dom";
 
-export const Logo = ({link}) => {
+export const Logo = () => {
     const text = "j.inong";
     const logoText = TypingEffect(text, 200);
     let className = '';
@@ -17,7 +17,9 @@ export const Logo = ({link}) => {
         if (location.pathname !== '/') {
             navigate('/');
         } else {
-            document.getElementById(link).scrollIntoView({behavior: "smooth"});
+            window.scrollTo({top: 0, behavior: 'smooth'});
+
+            //document.getElementById(link).scrollIntoView({behavior: "smooth"});
         }
     }
 

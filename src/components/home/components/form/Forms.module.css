@@ -1,0 +1,104 @@
+.forms {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+
+    & input {
+        width: 100%;
+        padding: 0.5em 0.7em;
+        margin: 0.3em 0;
+        box-sizing: border-box;
+        font-family: 'Space Mono', monospace;
+        font-size: 1.05em;
+        outline:none;
+        transition: all 0.15s ease-in-out;
+        border-radius: 3px;
+        border: 0.15em solid #4b4457;
+        background: var(--raisin);
+        color: var(--platinum);
+    }
+
+    & input:focus {
+        box-shadow: 0 0 5px var(--blue);
+        border: 0.15em solid var(--blue) !important;
+    }
+
+    & h1 {
+        font-size: 1.3em;
+        font-weight: normal;
+    }
+
+    & label {
+        font-family: 'Space Mono', monospace;
+        font-size: 0.8em;
+        color: var(--red);
+    }
+
+    & textarea {
+        width: 100%;
+        padding: 0.5em 0.7em;
+        margin: 0.3em 0;
+        box-sizing: border-box;
+        font-family: 'Space Mono', monospace;
+        font-size: 1.05em;
+        outline:none;
+        transition: border 0.15s ease-in-out;
+        border-radius: 3px;
+        border: 0.15em solid #4b4457;
+        background: var(--raisin);
+        color: var(--platinum);
+        resize: vertical;
+        height: 7em;
+        min-height: 7em;
+        max-height: 12em;
+    }
+
+    & textarea:focus {
+        box-shadow: 0 0 5px var(--blue);
+        border: 0.15em solid var(--blue) !important;
+    }
+}
+
+.incorrectForm {
+    border: 0.15em solid var(--red) !important;
+}
+
+.popup {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+    font-size: 1em;
+    bottom: -3em;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.showPopup {
+    bottom: -2em;
+    opacity: 1;
+}
+
+.popupSuccess {
+    color: var(--blue);
+}
+
+.popupFail {
+    color: var(--red);
+}
+
+.emailLink {
+    font-family: 'Space Mono', monospace;
+    font-size: 1.05em;
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: var(--blue);
+    transition: all 0.1s ease-in-out;
+
+    &:hover {
+        color: var(--red);
+    }
+}
