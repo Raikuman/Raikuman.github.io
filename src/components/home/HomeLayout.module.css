@@ -1,6 +1,78 @@
-.coverImg {
-    max-height: calc(100vh - 3.333125em);
+.splashContainer {
+    height: calc(100vh - 3.333125em);
     width: 100%;
     display: flex;
-    object-fit: cover;
+    background-image: url('../../resources/splash.png');
+    background-size: cover;
+    background-position: 50% 0;
+    align-items: center;
+}
+
+.splashWrapper {
+    width: 100%;
+    display: flex;
+    vertical-align: middle;
+}
+
+.splashContentContainer {
+    margin: 0 12%;
+
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    & h1 {
+        font-family: 'Ropa Sans', sans-serif;
+        font-size: 7em;
+        color: var(--red);
+        width: 100%;
+        margin: 0.2em 0;
+    }
+
+    & P {
+        font-family: 'Space Mono', monospace;
+        font-size: 1.3em;
+        color: var(--platinum);
+    }
+
+    & img {
+        width: 25em;
+        max-width: 25em;
+        object-fit: cover;
+    }
+}
+
+.splashSectionLeft {
+    margin: 0 2%;
+    width: 62.66%;
+}
+
+.splashSectionRight {
+    margin: 0 2%;
+    width: 29.33%;
+}
+
+@media screen and (max-width: 68.75em) {
+    .splashContentContainer {
+        flex-direction: column-reverse;
+
+        & img {
+            width: calc(8em + 20vw);
+            min-width: 1em;
+        }
+
+        & h1 {
+            line-height: 0.7em;
+        }
+    }
+
+    .splashSectionLeft {
+        width: 80%;
+        text-align: center;
+    }
+
+    .splashSectionRight {
+        width: 60%;
+        text-align: center;
+    }
 }

@@ -2,7 +2,6 @@ import {SplashCover} from "./SplashCover";
 import {useEffect} from "react";
 import {useLocation} from "react-router-dom";
 import {TabTitle} from "../../utils/TabTitle";
-import {AboutHome} from "./AboutHome";
 import {ProjectsHome} from "./ProjectsHome";
 import {ResumeHome} from "./ResumeHome";
 import {ContactHome} from "./ContactHome";
@@ -24,7 +23,6 @@ export const Home = () => {
         <div>
             <SplashCover id="#home"/>
 
-            <AboutHome/>
             <ProjectsHome/>
             <ResumeHome/>
             <ContactHome/>
