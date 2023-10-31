@@ -5,6 +5,7 @@ import {TabTitle} from "../../utils/TabTitle";
 import {ProjectsHome} from "./ProjectsHome";
 import {ResumeHome} from "./ResumeHome";
 import {ContactHome} from "./ContactHome";
+import {AboutHome} from "./AboutHome";
 
 export const Home = () => {
     TabTitle("Jim Inong");
@@ -21,8 +22,9 @@ export const Home = () => {
 
     return (
         <div>
-            <SplashCover id="#home"/>
+            <SplashCover/>
 
+            <AboutHome/>
             <ProjectsHome/>
             <ResumeHome/>
             <ContactHome/>

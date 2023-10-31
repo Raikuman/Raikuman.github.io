@@ -44,7 +44,7 @@ class Navbar extends Component {
                     </div>
                     <div id="burgerWrapper" className={styles.burgerWrapper}>
                         <div className={styles.burgerMenu}>
-                            <NavlinkButton content="ABOUT" link="#about" className={styles.burgerItem}
+                            <NavlinkButton content="ABOUT" link="#home" className={styles.burgerItem}
                                            parentStateUpdate={this.toggleState}/>
                             <NavlinkButton content="PROJECTS" link="#projects" className={styles.burgerItem}
                                            parentStateUpdate={this.toggleState}/>

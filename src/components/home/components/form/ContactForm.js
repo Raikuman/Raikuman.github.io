@@ -22,6 +22,10 @@ class ContactForm extends Component {
         }
 
         this.GetPopup = this.GetPopup.bind(this);
+        this.ValidateName = this.ValidateName.bind(this);
+        this.ValidateEmail = this.ValidateEmail.bind(this);
+        this.ValidateMessage = this.ValidateMessage.bind(this);
+        this.SubmitEmail = this.SubmitEmail.bind(this);
     }
 
     HandleInputName(event) {
@@ -87,7 +91,10 @@ class ContactForm extends Component {
         }
 
         this.setState({showPopup: true})
-        this.setState({nameText: "", emailText: "", messageText: "", validName: true, validEmail: true, validMessage: true})
+        this.setState({nameText: "", emailText: "", messageText: ""})
+        this.ValidateMessage();
+        this.ValidateEmail();
+        this.ValidateName();
 
         const timer =  setTimeout(() => {
             this.setState({showPopup: false});
@@ -118,21 +125,21 @@ class ContactForm extends Component {
             <form ref={this.state.formRef} style={{position: "relative"}}>
                 <div className={styles.forms}>
                     <h1>NAME</h1>
-                    <input type="text" id="name" name="name"  onBlur={this.ValidateName.bind(this)} value={this.state.nameText} onChange={this.HandleInputName.bind(this)}  className={validName}/>
+                    <input type="text" id="name" name="name"  onBlur={this.ValidateName} value={this.state.nameText} onChange={this.HandleInputName.bind(this)}  className={validName}/>
                     <label style={this.state.validName ? {display: "none"} : {display: "inline"}}>Name cannot be empty</label>
                 </div>
                 <div className={styles.forms}>
                     <h1>EMAIL</h1>
-                    <input type="text" id="sent_email" name="sent_email" onBlur={this.ValidateEmail.bind(this)} value={this.state.emailText} onChange={this.HandleInputEmail.bind(this)} className={validEmail}/>
+                    <input type="text" id="sent_email" name="sent_email" onBlur={this.ValidateEmail} value={this.state.emailText} onChange={this.HandleInputEmail.bind(this)} className={validEmail}/>
                     <label style={this.state.validEmail ? {display: "none"} : {display: "inline"}}>Email cannot be empty</label>
                 </div>
                 <div className={styles.forms}>
                     <h1>MESSAGE</h1>
-                    <textarea id="message" name="message" onBlur={this.ValidateMessage.bind(this)} value={this.state.messageText} onChange={this.HandleInputMessage.bind(this)} className={validMessage}/>
+                    <textarea id="message" name="message" onBlur={this.ValidateMessage} value={this.state.messageText} onChange={this.HandleInputMessage.bind(this)} className={validMessage}/>
                     <label style={this.state.validMessage ? {display: "none"} : {display: "inline"}}>Message cannot be empty</label>
                 </div>
                 <div className={buttonStyles.buttonWrapper}>
-                    <button className={`${buttonStyles.defaultButtonStyle} ${buttonStyles.redButton}`} onClick={this.SubmitEmail.bind(this)}>
+                    <button className={`${buttonStyles.defaultButtonStyle} ${buttonStyles.redButton}`} onClick={this.SubmitEmail}>
                         <h1>Send message <FontAwesomeIcon icon="fa-solid fa-envelope" /></h1>
                     </button>
                 </div>
