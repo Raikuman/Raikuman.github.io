@@ -12,7 +12,7 @@ export const ContactHome = () => {
                 <ColumnHalf>
                     <h1 style={{textAlign: "center"}} className={pageStyles.headerRed}>CONTACT</h1>
                     <p style={{textAlign: "center"}}>Got something to ask? Leave a message!</p>
-                    <a className={formStyles.emailLink} href = "mailto: jinongr98@gmail.com">jinongr98@gmail.com</a>
+                    <a style={{width: "fit-content", margin: "auto"}} className={formStyles.emailLink} href = "mailto: jinongr98@gmail.com">jinongr98@gmail.com</a>
                 </ColumnHalf>
                 <ColumnHalf>
                     <ContactForm/>
