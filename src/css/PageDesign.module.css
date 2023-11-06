@@ -34,9 +34,7 @@
 }
 
 .roundedColumn {
-    background-color: var(--lightRaisin);
-    color: var(--platinum);
-    border-radius: 0 0.5em;
+    border-radius: 0 1em;
 }
 
 .highlightBlue {
@@ -81,11 +79,7 @@
         color: var(--red);
     }
 
-    & h2 {
-        color: var(--blue);
-    }
-
-    & p {
+    & p, & h2 {
         color: var(--platinum);
     }
 }

@@ -50,7 +50,7 @@
     }
 
     &::after {
-        background: var(--platinum);
+        background: var(--red);
     }
 }
 
@@ -61,7 +61,7 @@
     }
 
     &::after {
-        background: var(--blue);
+        background: var(--night);
     }
 }
 
@@ -72,6 +72,6 @@
     }
 
     &::after {
-        background: var(--blue);
+        background: var(--platinum);
     }
 }

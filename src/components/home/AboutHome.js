@@ -45,14 +45,6 @@ export const AboutHome = () => {
                         <img src={react} alt={"React"}/>
                     </SkillIcon>
                 </SkillBox>
-                <SkillBox title={"Back-End"}>
-                    <SkillIcon title={"SQLite"}>
-                        <img src={sqlite} alt={"SQLite"}/>
-                    </SkillIcon>
-                    <SkillIcon title={"NodeJS"}>
-                        <img src={nodejs} alt={"NodeJS"}/>
-                    </SkillIcon>
-                </SkillBox>
                 <SkillBox title={"Other"}>
                     <SkillIcon title={"Git"}>
                         <img src={git} alt={"Git"}/>
@@ -62,6 +54,14 @@ export const AboutHome = () => {
                     </SkillIcon>
                     <SkillIcon title={"Docker"}>
                         <img src={docker} alt={"Docker"}/>
+                    </SkillIcon>
+                </SkillBox>
+                <SkillBox title={"Back-End"}>
+                    <SkillIcon title={"SQLite"}>
+                        <img src={sqlite} alt={"SQLite"}/>
+                    </SkillIcon>
+                    <SkillIcon title={"NodeJS"}>
+                        <img src={nodejs} alt={"NodeJS"}/>
                     </SkillIcon>
                 </SkillBox>
             </ColumnSingle>

@@ -47,12 +47,20 @@
 
 .bgWhite {
     background: var(--platinum);
+    color: var(--night);
 }
 
 .bgRed {
     background: var(--red);
+    color: var(--night);
 }
 
 .bgBlue {
     background: var(--blue);
+    color: var(--night);
+}
+
+.bgLightRaisin {
+    background: var(--lightRaisin);
+    color: var(--platinum);
 }

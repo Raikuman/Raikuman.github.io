@@ -139,7 +139,7 @@ class ContactForm extends Component {
                     <label style={this.state.validMessage ? {display: "none"} : {display: "inline"}}>Message cannot be empty</label>
                 </div>
                 <div className={buttonStyles.buttonWrapper}>
-                    <button className={`${buttonStyles.defaultButtonStyle} ${buttonStyles.redButton}`} onClick={this.SubmitEmail}>
+                    <button className={`${buttonStyles.defaultButtonStyle} ${buttonStyles.blueButton}`} onClick={this.SubmitEmail}>
                         <h1>Send message <FontAwesomeIcon icon="fa-solid fa-envelope" /></h1>
                     </button>
                 </div>

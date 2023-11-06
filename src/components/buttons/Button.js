@@ -1,8 +1,8 @@
 import styles from './ButtonStyle.module.css'
 import {useNavigate} from "react-router-dom";
-import Abberation from "../abberation/Abberation";
 
-export const Button = ({color, className, id, text, local, link}) => {
+
+export const Button = ({color, className, id, text, local, link, download}) => {
     let colorStyle;
     switch (color) {
         case "white":
@@ -30,6 +30,11 @@ export const Button = ({color, className, id, text, local, link}) => {
 
         if (link !== undefined) {
             window.open(redirect, '_blank');
+            return;
+        }
+
+        if (download !== undefined) {
+            window.open(download, '_blank');
         }
     }
 

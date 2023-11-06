@@ -1,3 +1,9 @@
+.skillboxWrapper {
+    display: inline-grid;
+    width: 40%;
+    margin: 0 5%;
+}
+
 .iconWrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit, 7.3em);
