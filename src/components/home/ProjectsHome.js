@@ -18,7 +18,7 @@ export const ProjectsHome = () => {
                     <p>
                         A collection of projects I've developed: Web design & development, games, bots, etc.
                     </p>
-                    <Button color="blue" local="/projects" text={"View projects"}/>
+                    <Button color="blue" link="https://github.com/Raikuman" text={"View projects"}/>
                 </ColumnHalf>
             </ColumnSingle>
         </Row>

@@ -29,7 +29,8 @@ export const Button = ({color, className, id, text, local, link, download}) => {
         }
 
         if (link !== undefined) {
-            window.open(redirect, '_blank');
+            window.open(link, '_blank');
+            console.log("Here")
             return;
         }
 
